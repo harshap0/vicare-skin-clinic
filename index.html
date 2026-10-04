@@ -6,7 +6,7 @@
 <link rel="canonical" href="https://vicare-skin-clinic-u8bu.vercel.app/">
 <meta property="og:url" content="https://vicare-skin-clinic-u8bu.vercel.app/">
 <meta property="og:image" content="https://vicare-skin-clinic-u8bu.vercel.app/og.jpg">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ViCare Skin Clinic, Ahmedabad">
+<meta property="og:imageif(!TOUCH){:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ViCare Skin Clinic, Ahmedabad">
 <meta name="twitter:image" content="https://vicare-skin-clinic-u8bu.vercel.app/og.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' rx='2.2' fill='%234A2416'/%3E%3Ctext x='5' y='7.6' font-size='7' text-anchor='middle' fill='%23E8B7A6'%3E✦%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Caveat:wght@500&family=Libre+Caslon+Text:ital@0;1&display=swap">
@@ -1584,7 +1584,7 @@ pcx.style.opacity=1-seg(p,.22,.34);pcx.style.translate=`0 ${-seg(p,.2,.34)*60}px
 const out2=seg(p,.62,.72),v2=seg(p,.32,.42)*(1-out2),v3=seg(p,.7,.8);vis(sc2,v2);vis(sc3,v3);
 $$('.w',sc2).forEach((w,i)=>{const k=Math.min(seg(p,.32+i*.03,.42+i*.03),1-out2);w.style.clipPath=`inset(0 0 ${(1-k)*100}% 0)`;w.style.transform=`translateY(${(1-k)*24}px)`});
 dim.style.opacity=.15+.45*Math.max(v2,v3);pst.style.scale=1+p*.28;gh.style.translate=`${-p*10}vw 0`;scr.style.visibility=p>.05?'hidden':'visible'}
-if(!TOUCH){addEventListener('scroll',hs,{passive:true});addEventListener('resize',hs);hs()}
+{addEventListener('scroll',hs,{passive:true});addEventListener('resize',hs);hs()
 $('#dir3').href=CFG.MAPS;
 if(FINE&&!RM){const hh=$('#hero');hh.addEventListener('pointermove',e=>{const r=hh.getBoundingClientRect();hh.style.setProperty('--mx',e.clientX-r.left+'px');hh.style.setProperty('--my',e.clientY-r.top+'px')})}
 const aio=new IntersectionObserver(es=>es.forEach(x=>x.target.classList.toggle('act',x.isIntersecting)),{rootMargin:'-47% 0px -47% 0px'});$$('.dfr .dr').forEach(r=>aio.observe(r));

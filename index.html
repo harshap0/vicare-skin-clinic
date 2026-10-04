@@ -1626,7 +1626,8 @@ function hs(){if(RM)return;const r=hw.getBoundingClientRect(),p=cl(-r.top/(hw.of
 pcx.style.opacity=1-seg(p,.22,.34);pcx.style.translate=`0 ${-seg(p,.2,.34)*60}px`;pcx.style.visibility=p>.34?'hidden':'visible';
 const out2=seg(p,.62,.72),v2=seg(p,.32,.42)*(1-out2),v3=seg(p,.7,.8);vis(sc2,v2);vis(sc3,v3);
 $$('.w',sc2).forEach((w,i)=>{const k=Math.min(seg(p,.32+i*.03,.42+i*.03),1-out2);w.style.clipPath=`inset(0 0 ${(1-k)*100}% 0)`;w.style.transform=`translateY(${(1-k)*24}px)`});
-dim.style.opacity=.15+.45*Math.max(v2,v3);pst.style.scale=1+p*.28;gh.style.translate=`${-p*10}vw 0`;scr.style.visibility=p>.05?'hidden':'visible'}
+dim.style.opacity=.15+.45*Math.max(v2,v3);const cam=innerWidth<=600?.10:innerWidth<=900?.16:.28;
+pst.style.scale=1+p*cam;gh.style.translate=`${-p*10}vw 0`;scr.style.visibility=p>.05?'hidden':'visible'}
 {addEventListener('scroll',hs,{passive:true});addEventListener('resize',hs);hs()
 $('#dir3').href=CFG.MAPS;
 if(FINE&&!RM){const hh=$('#hero');hh.addEventListener('pointermove',e=>{const r=hh.getBoundingClientRect();hh.style.setProperty('--mx',e.clientX-r.left+'px');hh.style.setProperty('--my',e.clientY-r.top+'px')})}
